@@ -1,0 +1,724 @@
+/* These are all the ccs styles which are connected to our website and webpages*/
+
+body {font-family: 'Times New Roman', Times, serif;} /* This part is the desing of the body of our page */
+
+.top  {              /* This are the design of the top of the page*/
+    width:1185px;
+    height:35px;
+    background-color: #000000;
+    padding: 20px; 
+    margin: auto; 
+    
+ }
+.Links {    /*Here is how the desgin of the local links which are on top of the page*/
+    width: 400px;
+    height: 0px;
+    float: right; 
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.5s;
+    
+    }
+
+.title {       /* This are the designing information of he title which is on top of the page */
+    width: 500px;
+    font-size: 40px;
+    margin: -0.2cm;
+    transform-style: flat;
+    text-shadow: 10px 10px 10px hsl(192, 100%, 50%); 
+    color: white;
+    text-align: center;
+
+}
+
+.title:hover {      /* I also added a hover to the title which is animation whith the name spin more info about this is the keyframes*/
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 13s;
+}
+
+
+@keyframes  spin {    /* The keyframes is telling what the animation will do */
+    0% {transform: rotateX(0deg);}
+    50% {transform: rotateX(360deg);}
+    100% {transform: rotateX(0deg);}
+}
+
+    
+.Links a {      /* Here are the information about the hyperlings such as color padding font-size etc*/
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 4px ;
+    font-size: 18px;
+    background: linear-gradient(90deg, rgb(17, 100, 255), rgb(17, 255, 184));    
+    display: inline-block;
+    border-radius: 30px;
+    }
+
+.Links a:hover { /* Here is after you hover on one of the lings how the should look*/
+    text-decoration: none;
+    color: black;
+    background: hsl(192, 100%, 50%);        /*from here to the end of this is shown ater we hover to links we can se the links shining as a neonlight*/
+    box-shadow: 0 0 5px hsl(192, 100%, 50%),
+                0 0 25px hsl(192, 100%, 50%),
+                0 0 50px hsl(192, 100%, 50%),
+                0 0 200px hsl(192, 100%, 50%);
+}
+
+.search-box {      /*This are information about the serch box which is on top of the page whith all of the dimensions below*/
+    color: white;
+    position: absolute;
+    top:  9%;
+    left: 54%;
+    transform:  translate(-50%, -50%);
+    height: 40px;
+    border-radius: 40px;
+    text-align: center;
+    padding: 10px;
+   
+    
+}
+
+.search-box:hover  .search-txt { /*This also is for the search box, however if we dont hover to the icon we will only see the icon, but when we hover on it will be expended and well see the place where we can type*/
+    width: 240px;
+    padding: 0 6px;
+    text-decoration: none;
+    color: white;
+    background: hsl(192, 100%, 50%);        /*the search box also has the neon type after hovering*/
+    box-shadow: 0 0 5px hsl(192, 100%, 50%),
+                0 0 25px hsl(192, 100%, 50%),
+                0 0 50px hsl(192, 100%, 50%),
+                0 0 200px hsl(192, 100%, 50%);  
+
+}
+
+.search-btn {   /*This are the information of the search button how or where should it look*/
+
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt {   /* Here are about the search box text */
+    border: none;
+    background: linear-gradient(rgb(17, 100, 255), rgb(17, 255, 184));
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.6s;
+    width: 0px;
+    border-radius: 30px;
+}
+
+
+
+
+.socialmedia {      /* This is the designing of the social medias which are on the bottom of the page*/
+    padding: 30px;
+    margin: -50px;
+    width: 80px;
+    float: right;
+    }
+
+.MainImage {    /*Here is shown the first image the dimension, where it should be what should happen when we scroll etc*/
+    width: 1225px;
+    height: 450px;
+    background-image: url(../images/1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+    }
+
+.intro {    /*This are the information about the div intro*/
+    width: 290px;
+    height: 300px;
+    position: relative;
+    left: 900px;
+    top: 40px;
+    }
+
+.content {  /* This is the designing of the content which is within the div intro*/
+
+    width: 1185px;
+    height: 400px;
+    background-color: #000000;
+    padding: 20px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+    }
+    
+
+.content p {    /*This is only about the paragraphs of the content color and size in this case and so I wouldn't change this for every paragraph*/
+    font-size: 15px;
+    color: #ffffff;
+    padding: 10px;
+    }
+
+.p {    /*I named this class p for the only about the paragraphs of the contenct and I also added two divs with the same name so I would do the same things twice*/
+    width: 410px;
+    height: 350px;
+    text-align: justify;
+    display: inline-block;
+    margin-right: 120px;
+    float: right;
+    background: linear-gradient(rgb(17, 100, 255), rgb(17, 255, 184)); 
+    border-radius: 30px;
+}
+    
+.p p {      /*Here are some additional designing only on the pargraps of which are in the content*/
+    width: 390px;
+    height: 250px;
+    text-align: justify;
+    display: inline-block;
+    margin-right: 120px;
+    color:  #ffffff;
+    padding: 8px;
+    
+    
+     
+    }
+
+.p:hover {  /* Here I also added a hover option of the paragraphs which is similar to the links above that show the neon type*/
+    text-decoration: none;
+    background: hsl(192, 100%, 50%);
+    box-shadow: 0 0 5px hsl(192, 100%, 50%),
+                0 0 25px hsl(192, 100%, 50%),
+                0 0 50px hsl(192, 100%, 50%),
+                0 0 200px hsl(192, 100%, 50%);  
+}
+.p p:hover { /*This is only for the color of the text after we hover*/
+    color:black;
+}
+
+.new { /*I named this div new because this is the newest work that we work I also connected an Image of PVC work with this and the other data so It looks the way it does*/
+    width: 1205px;
+    height: 450px;
+    background-image: url(../images/PVC1.jpg);
+    padding: 10px;
+    margin: auto;
+    background-attachment: fixed;
+   
+}
+
+.pvcwork {  /*I created this div becasuse so I can control the text and background color without making any difference on the bacground image which is there*/
+    width: 310px;
+    height: 470px;
+    text-align: justify;
+    display: inline-block;
+    float: right;
+    background: linear-gradient(rgb(17, 100, 255), rgb(17, 255, 184));
+    margin: -10px;
+    border-radius: 10px;
+    
+}
+
+.pvcwork p {  /* Here are the designing of the paragraphs of the div pvcwork*/
+    width: 300px;
+    height: 470px;
+    text-align: justify;
+    display: inline-block;
+    float: right;
+    color: white;
+    padding: 3px;
+
+}
+
+.pvcwork:hover { /*and here is what happens after we hover on the div pvcwork which I also added the neon type after we hover*/
+    text-decoration: none;
+    color: black;
+    background: hsl(192, 100%, 50%);
+    box-shadow: 0 0 5px hsl(192, 100%, 50%),
+                0 0 25px hsl(192, 100%, 50%),
+                0 0 50px hsl(192, 100%, 50%),
+                0 0 200px hsl(192, 100%, 50%);  
+
+}
+.bottom {  /* From here starts the bottom part*/
+    width: 1185px;
+    padding: 20px;
+    height: 70px;
+    color:  #000000;
+    margin: auto;
+    background-color: rgb(134, 2, 2);
+    }
+
+h4 {    /* This is for all h4 that I have on my website however there is only one on which is on the bottom part*/
+    display: inline;
+     color: #ebebeb;
+      font-size: 24px;
+    }
+
+h5 {    /* This is for all h5 that I have o my website however there is only one, which is on the bottom of the page*/
+    display: inline;
+     color: #ebebeb;
+      font-size: 14px;
+    }
+
+
+/*The home page is all done from now one will be the work of the previous work page.
+However the top of the page and the bottom of the page will be the same as the home page.
+This part will be for all of the pages that this website will have.*/
+
+.f1 {       /* The dif f1 is for fence and since we have more than one fences this is called fence 1 or f1*/
+    width: 1215px;
+    height: 630px;
+    background-image: url(../images/f1.jpg); /*This is a background I added an image as a background*/
+    padding: 5px ;
+    align-items: right;
+    background-attachment: fixed;
+
+}
+
+.f1text  {  /* This is the design of the text or the paragraphs on f1*/
+    width: 300px;
+    height: 400px;
+    background-color: rgb(187, 184, 184);
+    float: right; 
+    margin: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    
+        
+}
+
+.price1{    /* This is the part where I've shown the price for f1 the way it looks and how is designed below*/
+   text-align: center;
+   margin: 30px;
+   font-size: 25px;
+   border-radius: 30px;
+   background-color: gray;
+   padding: 10px;
+
+}
+
+.f2 {       /*Now here we start for fence 2 of f2 as we have seen until now the width most of the divs have the same because I want it to be equal with width, 
+            however there might be somewhere a different widht but that is all because I have to make it equal to the others. Originally it would be the same. 
+            but most of them are equal.*/
+    width: 1225px;
+    height: 600px;
+    background-image: url(../images/f2.jpg);
+    margin: auto;
+    background-attachment: fixed;
+}
+
+.f2text  {     /*This part is only for the paragraphs which I wanted to show them in for of a div*/
+    width: 300px;
+    height: 400px;
+    background-color: rgb(187, 184, 184);
+    float: right; 
+    margin: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    
+        
+}
+
+.price2 {       /* This is the price which is show on the bottom of the div f2text or in the main div f2*/
+   text-align: center;
+   margin: 30px;
+   font-size: 25px;
+   border-radius: 30px;
+   background-color: gray;
+   padding: 10px;
+}
+
+.f3 {       /* Here is the part when we can see the design of third fence also know as f3 which also is provided with a picture background
+            I also made this a little bit different than the others and I gave it a little opacity */
+    width: 1225px;
+    height: 630px;
+    background-image: url(../images/f3.PNG);
+    margin: auto;
+    background-attachment: fixed;
+    padding: -10px;
+    
+}
+
+.f3text  {      /* This is the desing of the paragraph of f3*/
+    width: 300px;
+    height: 400px;
+    background-color: rgb(187, 184, 184);
+    float: right;
+    margin: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 0.8;  
+}
+
+.price3 {       /* And this is the price for the fence 3, where and how it looks on the page. */
+   text-align: center;
+   margin: 30px;
+   font-size: 25px;
+   border-radius: 30px;
+   background-color: gray;
+   padding: 5px;
+}
+
+
+.d1 {          /* Now we start with the part of d1, so d1 is the name for Door 1, we can see the picture of the door 1 here*/
+    width: 1225px;
+    height: 800px;
+    background-image: url(../images/d1.jpg);
+    margin: auto;
+    background-attachment: fixed;
+}
+
+.d1text  {     /* As most the above comments this is the same except this is for d1*/
+    width: 300px;
+    height: 400px;
+    background-color: rgb(187, 184, 184);
+    float: right;
+    margin: 80px;
+    padding: 10px;
+    border-radius: 20px;
+     
+}
+
+.price4 {   /* Here are the designs for the price for door 1*/
+   text-align: center;
+   margin: 30px;
+   font-size: 25px;
+   border-radius: 30px;
+   background-color: gray;
+   padding: 10px;
+}
+
+.d2 {       /* Here we start with door 2 and the designing of it in the webpage previous*/
+    width: 1225px;
+    height: 580px;
+    background-image: url(../images/d2.PNG);
+    margin: auto;
+    background-attachment: fixed;
+}
+.d2text  {  /* Here is the design of the text in the d2*/
+    width: 300px;
+    height: 400px;
+    background-color: rgb(187, 184, 184);
+    float: right;
+    margin: 80px;
+    padding: 10px;
+    border-radius: 20px;
+     
+}
+
+.price5 {   /* Here we have the design of the price part*/
+   text-align: center;
+   margin: 30px;
+   font-size: 25px;
+   border-radius: 30px;
+   background-color: gray;
+   padding: 10px;
+}
+
+.d3 {       /* Here starts the part of the design of the door 3, which also is provided with a picture*/
+    width: 1225px;
+    height: 700px;
+    background-image: url(../images/d3.jpg);
+    margin: auto;
+    background-attachment: fixed;
+}
+
+.d3text  {      /* This is for the text in door 3 which we can see in the webpage*/
+    width: 300px;
+    height: 400px;
+    background-color: rgb(187, 184, 184);
+    float: right;
+    margin: 80px;
+    padding: 10px;
+    border-radius: 20px;
+}   
+
+.price6 {       /* And this is part of the price in th webpage*/
+   text-align: center;
+   margin: 100px;
+   font-size: 25px;
+   border-radius: 30px;
+   background-color: gray;
+   padding: 10px;
+}
+
+/*This is the end of the Webpage Previous
+What could you see there are some similar coments, this is because all of the data here are similar.
+What was changin was the pictures and some differences in pixels from one part to another*/
+
+/* And from here on starts the designing for the PVC Webpage*/
+
+.bodya {
+    background-image: url(../images/background.jpg);
+}
+
+.about1 {
+    width:1170px;
+    height:385px;
+    padding: 20px; 
+    margin: auto; 
+}
+
+
+.about101 {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(236, 235, 235);
+    float: right; 
+    margin: 80px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background-image: url(../images/maps.jpg);
+}
+
+.location {
+    font-size: 30px;
+}
+
+
+.about102 {
+    width: 500px;
+    height: 350px;
+    background-color: rgb(236, 235, 235);; 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.about101 p {
+    margin:  30px;
+    font-size: 30px;
+}
+
+.about2 {
+    width:1170px;
+    height:450px;
+    padding: 20px; 
+    margin: auto; 
+}
+
+.about201 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(236, 235, 235);;    
+    border-radius: 20px;
+    margin: 100px;
+    text-align: center;
+}
+
+.abouttext {
+    float: right;
+    width: 500px;
+    height: 250px;
+    margin: 30px;
+    background-color: rgb(236, 235, 235);;
+    padding: 7px;
+    border-radius: 30px;
+}
+
+
+
+/*The about webpage here is done. And now from now one we start with the desing of the contact us webpage*/
+
+
+
+* { /* I used this to set all the defoult elements to 0*/
+    margin: 0;
+    padding: 0;
+}
+
+.bodyc {
+    
+    background-image: url(../images/CUB.jpg);
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+    background: #ffffff;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(72,98,85,0.6);
+}
+
+.container p {
+    text-transform: uppercase;     /*This is so all the letters are uppercase or big*/
+    text-align: center; /*This is to align the text to center*/ 
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #486255;
+    letter-spacing: 1px;  /* This is how much space we want between letters*/
+}
+
+.imput {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 2px solid #e9eaea;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none; /*Because there was a colord border, so I used this to remove it.*/
+    transition: all 0.5s ease; /* I used this to make it as a smooth transition effect*/
+}
+
+.message {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 2px solid #e9eaea;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none; /*Because there was a colord border, so I used this to remove it.*/
+    transition: all 0.5s ease; /* I used this to make it as a smooth transition effect*/
+}
+
+.area {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 2px solid #e9eaea;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none; /*Because there was a colord border, so I used this to remove it.*/
+    transition: all 0.5s ease; /* I used this to make it as a smooth transition effect*/
+}
+
+.login .imput { /*From here on we're targeting the imput field iside the login development */
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.login .imput:last-child { /* I did this so Your Name, and Your Email Address would be horizontal and parallel*/
+    margin-right: 0;
+}
+
+.message { /*Here I'm only going to change the hight of the text in message*/
+    height: 200px;
+}
+
+.area { /*Here I'm only going to change the hight of the text in area*/
+    height: 200px;
+}
+
+.buttonm {
+    width: 250px;
+    background: #486255;
+    text-align: center;  /* to set te text horizontaly in the center*/
+    line-height: 50px; /* This is to set the text vertically to the center*/
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+/* Here is the end webpage contact us*/
+/*Now below starts the desinging of the webpage BMI, which is for Body Mass Calculator. Which we'll create a calculator that by 
+putting the weght and hight well get the result of our body mass*/
+
+
+.bodycc { /*I gave a class to the body of this webpage because I wanted to add a bacground image which will be for the whole page*/
+    background-image: url(../images/calc.jpg);
+    margin: auto;
+}
+
+.CC1 { /*This are the codes for the calc div where and how should it look, mostly are going to be for the position so it will be in the center*/
+    width: 400px;
+    background: linear-gradient(rgb(17, 100, 255), rgb(17, 255, 184));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 50px;
+    color: white;
+    box-shadow: -10px -10px 5px 0 rgb(17, 100, 255);
+}
+
+h1 {    /*here are the information about all h1, but I only have 1 h1 in my website so there will be no other differences exept in te BMI webpage*/
+    color: rgb(17, 255, 184);
+    text-align: center;
+}
+
+.CC1 p { /*Here I wantet to change only the color for the paragraphs which are in the div CC1*/
+    color: rgb(255, 254, 172);
+}
+
+#height {   /* I named to id height becase I'm working for the height which will be on the calculator*/
+    width: 100%;
+    height: 35px;
+    outline: none;
+}
+
+#weight {       /* I named to id weight becase I'm working for the weight which will be on the calculator*/
+    width: 100%;
+    height: 35px;
+    outline: none;
+}
+
+#btn {      /* This are for the button which is the the webpage MBI. Where and how it looks it's designed below*/
+    width: 150px;
+    height: 35px;
+    margin-top: 25px;
+    border-radius: 12px;
+    background: linear-gradient(rgb(17, 100, 255), rgb(17, 255, 184));
+    font-size: 18px;
+    color: rgb(159, 253, 230);
+    
+}
+
+#result {   /*This id is for after we press the button we'll get some text and this is how it will look*/
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    background: linear-gradient(rgb(17, 100, 255), rgb(17, 255, 184));
+    height: 30px;
+    border-radius: 5px;
+
+}
+
+#result:hover { /*Here is after we hover on the result which we'll get, I also added te neon-light color desing*/
+    text-decoration: none;
+    background: hsl(192, 100%, 50%);
+    box-shadow: 0 0 5px hsl(192, 100%, 50%),
+                0 0 25px hsl(192, 100%, 50%),
+                0 0 50px hsl(192, 100%, 50%),
+                0 0 200px hsl(192, 100%, 50%);  
+    
+}
+
+
+/*
+color
+bacground color 
+background 
+font-size
+border radius
+margin: top, right, left 
+max shadow
+width 
+height 
+etc
+.
+.
+.
+.
+.
+
+Proffessor This is comment for you or explanation. I didn't want to comment to every line such as the ones that I wrote above. 
+Because they're really simple to be understand their name tell what they are. That's why I did add comment for every one of them.
+
+*/

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Metal Workshop VADE</title> <!-- This is the title of the Web-page that I'm creating -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"> <!-- Here I've linked the html file with external css-->
+		<script src="https://kit.fontawesome.com/767e391313.js" crossorigin="anonymous"></script> <!-- This is compied passed
+		from a website which was neccesarry so that the search icon below would work. -->
+		<script src="javascript/js.js"> </script>
+
+	</head>
+
+	<body class="bodycc"> 		
+		<div class="top"> <!-- Within this class I will have everything that I need for the top of the page-->
+			<div class="Links"> <!--This is the beggining of my local links which I've created-->
+				<a href="Home.html">Home</a> <!--This is the first local hyperlink also known as the homepage-->
+				<a href="Previous.html">Previous Work</a> <!--This is the second local link which shows some of the previous works that were done-->
+				<a href="Contact.html">Contact Us</a> <!-- This is the hyperlink for the PVC-->
+				<a href="About.html">About Us</a> <!--This is the third link which the user can learn more about the company and staff-->
+				<a href="BMI.html">BMI</a> <!--This is for the BMI calculator-->
+			</div>
+
+			<div class="title"> <!--This div is for the tite which is on top of the page-->
+				Metal Workshop "VADE" <!--Name of the company-->
+			</div>
+
+			<div class="search-box"> <!--This div is for the search box which is on top of the page-->
+				<input class="search-txt" type="text" name="" placeholder="Search" > <!--This are for the search opetion such as type, name, calss and placeholdrer-->
+				<i class="fas fa-search"></i> <!--This is the link that connects the search icon with my website, however this icon cannot be seen without internet. Also this was just copied from the website -->
+				<a class="search-btn" href="#"> <!--this part is just how to connect with other links and thigs which I din't do yet-->				
+				</a>
+			</div>
+		</div>
+
+		<div class="CC1"> <!-- This div is for the calculator-->
+
+				<h1>BMI calculator</h1>
+
+				<p>Your Height in Cm</p> 
+				<input type="text" id="height"> <!--Here I added an input type so we can write what we want-->
+
+				<p>Your Weight in Kg</p>
+				<input type="text" id="weight"> <!--Here I added an input type so we can write what we want-->
+
+				<button id="btn" onclick="calculateBMI()" ><strong>Calculate</strong></button> <!-- here I added a button with a type button which we will get 
+				something when we'll click on it-->
+
+				<div id="result"></div> <!-- and that thing that we'll get is the result.  The result will be different depending on height and mass fo the body.-->
+		</div>
+	</body>
+</html>
